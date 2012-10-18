@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/styles")
+    @Scripts.Render("~/js")
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="">
+                <a href="#">vinquire</a>
+            </li>
+            <li class="">
+                <a href="#"><i class="icon-search"></i> VIN Search & Check</a>
+            </li>
+            <li class="">
+                <a href="#"><i class="icon-book"></i> Vehicle History</a>
+            </li>
+            <li class="">
+                <a href="#"><i class="icon-ok-circle"></i> PPSR Report</a>
+            </li>
+            <li class="pull-right dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                </ul>
+            </li>
+            <li class="pull-right active">
+                <a href="#">Community</a>
+            </li>
+        </ul>
+    </div>
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>
