@@ -9,6 +9,7 @@ using dotless.Core.Importers;
 using dotless.Core.Input;
 using dotless.Core.Loggers;
 using dotless.Core.Parser;
+using Vinquire.Infrastructure;
 
 public class LessMinify : IBundleTransform
 {
@@ -46,8 +47,9 @@ public class LessMinify : IBundleTransform
     /// <param name="lessParser">The LESS parser.</param>
     private ILessEngine CreateLessEngine(Parser lessParser)
     {
-        var logger = new AspNetTraceLogger(LogLevel.Debug | LogLevel.Warn | LogLevel.Error | LogLevel.Info, new Http());
-        return new LessEngine(lessParser, logger, false, false, true);
+        var logger = new DebugLogger(LogLevel.Debug | LogLevel.Warn | LogLevel.Error | LogLevel.Info);
+        //var logger = new AspNetTraceLogger(LogLevel.Debug | LogLevel.Warn | LogLevel.Error | LogLevel.Info, new Http());
+        return new LessEngine(lessParser, logger, false, true, false);
     }
 
     /// <summary>

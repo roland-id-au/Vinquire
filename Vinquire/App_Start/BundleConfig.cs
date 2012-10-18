@@ -9,10 +9,10 @@ namespace Vinquire
         {
             
             
-            var scripts = new ScriptBundle("~/js").Include(
-                "~/Content/themes/base/js/jquery-*",
-                "~/Content/themes/base/js/bootstrap.js*",
-                "~/Content/js/vin.js"
+            var scripts = new ScriptBundle("~/scripts").Include(
+                "~/Assets/scripts/jquery-*",
+                "~/Assets/scripts/bootstrap/bootstrap.js*",
+                "~/Assets/scripts/vin.js"
             );
             //scripts.Transforms.Add(new JsMinify());
 
@@ -25,9 +25,11 @@ namespace Vinquire
             //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
             //            "~/Scripts/modernizr-*"));
 
-            var styles = new StyleBundle("~/styles").Include("~/Content/site.less");
-            styles.Transforms.Add(new LessMinify());
-            styles.Transforms.Add(new CssMinify());
+            var styles = new StyleBundle("~/styles").Include(
+                "~/Assets/styles/home.less"
+            );
+            //styles.Transforms.Add(new LessMinify());
+            //styles.Transforms.Add(new CssMinify());
 
             bundles.Add(styles);
         }

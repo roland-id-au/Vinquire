@@ -39,9 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dotless.Core, Version=1.3.0.5, Culture=neutral, PublicKeyToken=96b446c9e63eae34, processorArchitecture=MSIL">
+    <Reference Include="dotless.Core, Version=1.3.1.0, Culture=neutral, PublicKeyToken=96b446c9e63eae34, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\dotless.1.3.0.5\lib\dotless.Core.dll</HintPath>
+      <HintPath>..\packages\dotless.1.3.1.0\lib\dotless.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -133,6 +133,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\DebugLogger.cs" />
     <Compile Include="Infrastructure\ImportedFilePathResolver.cs" />
     <Compile Include="Infrastructure\LessMinify.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,7 +155,7 @@
     <Content Include="Assets\scripts\bootstrap\bootstrap-transition.js" />
     <Content Include="Assets\scripts\bootstrap\bootstrap-typeahead.js" />
     <Content Include="Assets\scripts\bootstrap\bootstrap.js" />
-    <Content Include="Assets\scripts\bootstrap\jquery-1.8.0.js" />
+    <Content Include="Assets\scripts\jquery-1.8.0.js" />
     <Content Include="Assets\scripts\vin.js" />
     <Content Include="Assets\styles\bootstrap\accordion.less" />
     <Content Include="Assets\styles\bootstrap\alerts.less" />
@@ -219,6 +220,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\styles\home.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
