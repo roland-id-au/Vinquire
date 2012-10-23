@@ -1,0 +1,51 @@
+@import "./site.less";
+@import "./shared/forms.less";
+@import "./shared/section-header.less";
+@import "./shared/section-hero.less";
+
+body {
+  background-image: url("/Assets/images/background.gif");
+  background-repeat: repeat;
+  background-color: #eeeeee;
+  margin-top: 15px;
+}
+
+section.header a {
+	color: @linkColor;
+	text-shadow: @textShadow;
+	&:hover { color: @black; }
+}
+
+section.header a.light {
+	color: @green;
+}
+
+#vin-search {
+	.form-inline;
+
+	margin: 0;
+	text-align: center;
+}
+
+#vin-search-label {
+	display: inline-block;
+    .ie7-inline-block();
+    margin-bottom: 0;
+	margin-right: 5px;
+    vertical-align: -45%;
+	font-weight: @headingsFontWeight;
+	font-size: 50px;
+	line-height: 20px;
+	height: 50px;
+    text-shadow: @textShadow;
+	font-family: "Agency FB";
+}
+
+#vin-search-label .green {
+	color: @green;
+}
+
+#vin-search-input {
+	vertical-align: middle;
+}
+

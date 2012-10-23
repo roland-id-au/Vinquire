@@ -8,31 +8,20 @@
     @Scripts.Render("~/scripts")
 </head>
 <body>
-    <div class="container">
-        <ul class="nav nav-pills">
-            <li class="">
-                <a href="#">vinquire</a>
-            </li>
-            <li class="">
+    <section class="header">
+        <header>
+            <nav>
+                <a class="title" href="#">vinquire</a>
                 <a href="#"><i class="icon-search"></i> VIN Search & Check</a>
-            </li>
-            <li class="">
                 <a href="#"><i class="icon-book"></i> Vehicle History</a>
-            </li>
-            <li class="">
                 <a href="#"><i class="icon-ok-circle"></i> PPSR Report</a>
-            </li>
-            <li class="pull-right dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                </ul>
-            </li>
-            <li class="pull-right active">
-                <a href="#">Community</a>
-            </li>
-        </ul>
-    </div>
+            </nav>
+            <nav class="right">
+                <a href="#" class="light">Community</a>
+                <a href="#">Help</a>
+            </nav>
+        </header>
+    </section>
     @RenderBody()
     @RenderSection("scripts", required: false)
 </body>

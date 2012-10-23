@@ -1,30 +1,14 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-
-<div class="content-container">
-    <div class="search-unit">
-        <form class="search-form">
-        <h1><span class="green">vin</span><span>quire</span></h1>
-        <div class="input-adorn">
-            <div id="vin-container" class="input-ghost">
-                <input id="vin" class="span4" type="text" placeholder="" maxlength="17" autocomplete="off" spellcheck="false">
-                <div class="ghost">
-                </div>
-            </div>
+<section class="hero">
+    <form id="vin-search">
+        <label id="vin-search-label" for="vin"><span class="green">vin</span>quire</label>
+        <div id="vin-search-input" class="input-adorn">
+            <input id="vin" class="span4" type="text" placeholder="" maxlength="17" autocomplete="off" spellcheck="false">
             <span class="add-above"><a href="#Where">Where can I find the VIN?</a></span>
         </div>
         <button type="submit" class="btn btn-green">Search</button>
-        </form>
-    </div>
-    <div>
-        <ul class="search-breadcrumb">
-            <li><span class="label label-inverse">Toyota</span></li>
-            <li><span class="label label-info">Sedan</span></li>
-        </ul>
-    </div>    
-    <div class="search-result">
-        <hr />
-    </div>
-</div>
+    </form>
+</section>
 

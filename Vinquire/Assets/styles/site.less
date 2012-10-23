@@ -1,26 +1,30 @@
-@import "../bootstrap/bootstrap.less";
-
-// Theme
-@theme: "default";
+@import "./bootstrap/bootstrap.less";
+@import "./shared/typography.less";
 
 // Paths
-@base-url: "Content";
-@theme-url: "{@base-url}/themes/{@theme}";
+@base-url: "/Assets";
+@iconSpritePath:          "@{base-url}/images/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "@{base-url}/images/glyphicons-halflings-white.png";
 
-// Varaibles
-@iconSpritePath:          "{@theme-url}/img/glyphicons-halflings.png";
-@iconWhiteSpritePath:     "{@theme-url}/img/glyphicons-halflings-white.png";
+// Dimensions
 
 @minWidth: 620px;
 @maxWidth: 920px;
 
+// Colours
 //@green: #06cf20;
 @green: #29c000;
 @linkColor: @grayLight;
 @linkColorHover: @black;
+@linkColorActive: @black;
 //@baseLineHeight: 25px;
 
-@textShadow: @white 0px 1px 1px;
-@textShadowHeavy: @grayLighter 0px 1px 1px;
-@textShadowInverted: @white 0px 1px 1px;
-@textShadowHeavyInverted: @grayLighter 0px 1px 1px;
+// Type
+@textShadow: @white 0 1px 1px;
+@textShadowHeavy: @grayLighter 0 1px 1px;
+@textShadowInverted: @white 0 1px 1px;
+@textShadowHeavyInverted: @grayLighter 0 1px 1px;
+
+body {
+	.container;
+}

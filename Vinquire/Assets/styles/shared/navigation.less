@@ -1,0 +1,31 @@
+nav.left {
+	.pull-left;
+}
+
+nav.right {
+	.pull-right;
+}
+
+nav a.current {
+	color: @linkColorActive;
+}
+
+nav a,
+nav a:active,
+nav a:hover {
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav > a:first-child {
+	margin-left: 0;
+}
+
+nav > a:last-child {
+	margin-right: 0;
+
+	&:active, &:hover {
+		margin-right: inherit;
+	}
+}

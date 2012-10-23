@@ -133,7 +133,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Infrastructure\DebugLogger.cs" />
     <Compile Include="Infrastructure\ImportedFilePathResolver.cs" />
     <Compile Include="Infrastructure\LessMinify.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -209,7 +208,12 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Assets\styles\shared\typography.less" />
+    <Content Include="Assets\styles\shared\section-hero.less" />
+    <Content Include="Assets\styles\shared\forms.less" />
+    <Content Include="Assets\styles\shared\buttons.less" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml.old" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -220,9 +224,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Assets\styles\shared\section-header.less" />
+    <Content Include="Assets\styles\index.less" />
+    <Content Include="Assets\styles\shared\navigation.less" />
+    <None Include="Views\Home\Index.cshtml.old" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\styles\home.less" />
+    <Content Include="Assets\styles\home.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\styles\index.tmp.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\styles\index.old.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

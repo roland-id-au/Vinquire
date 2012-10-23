@@ -1,0 +1,20 @@
+@import "./navigation.less";
+
+section.header > header {
+	font-size: 12px;
+    font-weight: bold;
+    text-shadow: @textShadow;
+
+	// Navigation
+	nav {
+		display: inline-block;
+	}
+
+	nav > a.title {
+		margin-right: 20px;
+	}
+
+	nav > a.active {
+		color: @green;
+	}
+}
