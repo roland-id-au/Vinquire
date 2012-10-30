@@ -1,14 +1,16 @@
 ﻿@{
     ViewBag.Title = "Index";
+    
+    @Scripts.Render("~/scripts/vin", "~/scripts/home")
 }
 <section class="hero">
-    <form id="vin-search">
-        <label id="vin-search-label" for="vin"><span class="green">vin</span>quire</label>
-        <div id="vin-search-input" class="input-adorn">
-            <input id="vin" class="span4" type="text" placeholder="" maxlength="17" autocomplete="off" spellcheck="false">
+    <form id="search">
+        <label id="search-label" for="vin"><span class="green">vin</span>quire</label>
+        <div id="search-input-wrapper" class="input-adorn">
+            <input id="search-input" class="span4" type="text" placeholder="" maxlength="17" autocomplete="off" spellcheck="false">
             <span class="add-above"><a href="#Where">Where can I find the VIN?</a></span>
         </div>
-        <button type="submit" class="btn btn-green">Search</button>
+        <button id="search-button" type="submit" class="btn btn-green">Search</button>
     </form>
 </section>
 

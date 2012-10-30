@@ -27,7 +27,7 @@ namespace Vinquire
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            BundleTable.Bundles.EnableDefaultBundles();
+            //BundleTable.Bundles.en
         }
     }
 }
